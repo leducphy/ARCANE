@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-while{
+    color: white !important;
+}
+
+#main {
+
+}
+
+#header{
+    height: 46px;
+    background-color: rgb(22, 20, 20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+
+#nav > li {
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-but:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-but{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-icon{
+    color:white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/Slider/arcane2.jpg') top center / cover no-repeat;
+
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px; /* tạo khoảng cách giữa các kí tự  */
+}
+
+#content .section-sub-heading{
+
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic; /* chữ nghiêng*/
+    opacity: 0.5;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+#content .member-list{
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.3333%;
+    text-align: center; /* can giua chu*/
+}
+
+#content .member-name  {
+    font-size: 15px;
+
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: black;
+}
+
+.tickets-list{
+    background-color: white;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Places */
+
+.maps-list {
+    /* margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px; */
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+
+.maps {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.places {
+    width: 100%;
+    display: block;
+}
+
+.places:hover{
+    opacity: 0.6;
+}
+
+.maps-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.map-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.map-date {
+    color: #757575;
+    padding-top: 15px;
+}
+
+.map-details {
+    line-height: 1.4;
+    padding-top: 15px;
+}
+
+.map-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+.map-btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+
+#footer{
+    
+
+}
+
+.modal{
+    position: fixed  ;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
