@@ -161,16 +161,39 @@ html {
     font-size: 14px;
 }
 
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+color: #000;}
+
+
 #header .search-but:hover {
     background-color: #f44336;
     cursor: pointer;
 }
 
+#header .mobile-menu-btn{
+    float: right;
+    padding: 0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .search-but {
     float: right;
     padding: 0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+
+#header .menu-icon,
 #header .search-icon {
     color: white;
     font-size: 20px;
@@ -210,9 +233,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -242,7 +268,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -295,11 +321,7 @@ html {
 /* Places */
 
 .maps-list {
-    /* margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px; */
-    /* margin: 32px -8px 0; */
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 
