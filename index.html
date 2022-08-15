@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcane</title>
+    <link rel="icon" href="./assets/fonts/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -16,19 +17,19 @@
         <div id="header">
             <!-- begin nav -->
             <ul id="nav">
-                <li><a href="">Arcane</a></li>
-                <li><a href="">Jinx</a></li>
-                <li><a href="">Vi</a></li>
-                <li><a href="">Jayce</a></li>
+                <li><a href="#">Arcane</a></li>
+                <li><a href="#member">Jinx</a></li>
+                <li><a href="#tour">Vi</a></li>
+                <li><a href="#contact">Jayce</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">About PhiLe</a></li>
-                        <li><a href="">Netflix</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">About PhiLe</a></li>
+                        <li><a href="#">Netflix</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </li>
             </ul>
@@ -51,7 +52,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="member" class="content-section">
                 <h2 class="section-heading">
                     ARCANE
                 </h2>
@@ -67,31 +68,29 @@
                     consequat.
                 </p>
 
-                <div class="member-list">
+                <div class="row member-list">
 
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Jinx</p>
                         <img src="./assets/img/Member/jinx.jpeg" alt="Jinx" class="member-img">
                     </div>
 
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Vi</p>
                         <img src="./assets/img/Member/vi.jpg" alt="Vi" class="member-img">
                     </div>
 
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Jayce</p>
                         <img src="./assets/img/Member/jayce.jpeg" alt="Jayce" class="member-img">
                     </div>
-
-                    <div class="clear"></div>
 
                 </div>
 
             </div>
 
 
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-while">
                         TOUR DATES
@@ -105,17 +104,17 @@
                     </ul>
 
 
-                    <div class="maps-list">
-                        <div class="maps">
+                    <div class="row maps-list">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/1.jpg" alt="Zaun" class="places">
                             <div class="maps-body">
                                 <h3 class="map-heading">New York</h3>
                                 <p class="map-date">Fri 27 Nov 2016</p>
                                 <p class="map-details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="map-btn js-buy-tk">Buy Tickets</button>
+                                <button class="btn js-buy-tk">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="maps">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/2.jpg" alt="Zaun" class="places">
                             <div class="maps-body">
                                 <h3 class="map-heading">Paris</h3>
@@ -124,7 +123,7 @@
                                 <button class="map-btn js-buy-tk">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="maps">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/3.jpg" alt="Zaun" class="places">
                             <div class="maps-body">
                                 <h3 class="map-heading">San Francisco</h3>
@@ -133,27 +132,68 @@
                                 <button class="map-btn js-buy-tk">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
 
 
             </div>
 
-            <div class="content-section">
+            <!-- Begin-Contact -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i> Hanoi, VN</p>
+                        <p><i class="ti-headphone-alt"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required class="form-control">
+                                    </input>
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required class="form-control">
+                                    </input>
+                                </div>
+                            </div>
 
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required class="form-control">
+                                    </input>
+                                </div>
+                            </div>
+                            <input class="btn mt-16 pull-right" type="submit" name="" value="SEND"> </input>
+                        </form>
+                    </div>
+                </div>
             </div>
+            <!-- End-Contact -->
 
+            <div class="map-section">
+                <img src="./assets/img/Slider/arcane2.jpg" alt="">
+            </div>
 
 
         </div>
 
         <div id="footer">
-
+            <div class="socials-list">
+                <a href="" class="ti-facebook"></a>
+                <a href="" class="ti-instagram"></a>
+                <a href="" class="ti-youtube"></a>
+                <a href="" class="ti-linkedin"></a>
+                <a href="" class="ti-twitter"></a>
+                <a href="" class="ti-reddit"></a>
+                <a href="" class="ti-apple"></a>
+            </div>
+            <p class="copyright">Create by <a href="">Phi Le</a></p>
         </div>
 
     </div>
